@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAMES HERE"
+title: "Electric Vehicle Analysis"
+author: "Yaohong Liang, Zhongyuan Ye, Shuyu He"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
