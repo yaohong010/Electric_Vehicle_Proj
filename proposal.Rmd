@@ -1,12 +1,16 @@
 # Proposal
 
 ## Research topic
-Over the last few years, the expanding market of electric vehicles has brought significant changes in the traditional automotive industry. With lower maintenance costs and a significant reduction in gas pollution, electric vehicles have become a more prominent choice for car customers. In addition, the fast development of batteries and charging techniques in recent years has increased the performance of electric vehicles and customers’ confidence in this new form of transportation. To understand the recent development of the electric vehicles market, we will analyze the electric vehicle data registered through the Washington State Department of Licensing (DOL). This research will perform statistical analysis and data visualization on the Electrical Vehicle Population Data to answer specific questions, including the change in the total amount over the years, the geographical distribution of different car models, and the electric range associated with model types and years. 
+Over the last few years, the expanding market of electric vehicles has brought significant changes in the traditional automotive industry. With lower maintenance costs and a significant reduction in gas pollution, electric vehicles have become a more prominent choice for car customers. In addition, the fast development of batteries and charging techniques in recent years has increased the performance of electric vehicles and customers’ confidence in this new form of transportation. 
+
+Our research topic is the analysis of the electric vehicle data registered through the Washington State Department of Licensing (DOL).To understand the recent development of the electric vehicles market, we will perform statistical analysis and data visualization on the Electrical Vehicle Population Data to answer specific questions, including the change in the total amount over the years, the geographical distribution of different car models, and the electric range associated with model types and years. 
 
 ## Data availability
 **Description:**
-Our team used the Dataset called 'Electric Vehicle Population Data'. 
+Our team used the Dataset called 'Electric Vehicle Population Data'.
+
 URL: https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2
+
 The Dataset records the electric Vehicle in Washington State, and the data is collected by the Washington State Department of Licensing when an electric vehicle is registered. The Dataset was created on April 16, 2019, and the most recent update was on October 14, 2022 (the frequency of updates of the Dataset is unknown. However, the most recent update was within one month of this proposal being created). The data format is CSV, and everyone can directedly download this Dataset from the Washington state government's open data portal: 'data.wa.gov'. Hence, our team will import data by going to the URL of the Dataset, clicking the 'Export' button, saving the Dataset in CSV format, and reading the CSV file from the R Studio. The Dataset has a header, 109027 rows. From the data provider, each row in the Dataset represents an electric vehicle in Washington State. 
 
 **Other Fact:**

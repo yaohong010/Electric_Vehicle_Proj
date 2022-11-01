@@ -23,7 +23,7 @@
 <meta name="author" content="Yaohong Liang, Zhongyuan Ye, Shuyu He" />
 
 
-<meta name="date" content="2022-10-31" />
+<meta name="date" content="2022-11-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -110,9 +110,37 @@
 <h1><span class="header-section-number">Chapter 2</span> Proposal<a href="proposal.html#proposal" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="research-topic" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Research topic<a href="proposal.html#research-topic" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Over the last few years, the expanding market of electric vehicles has brought significant changes in the traditional automotive industry. With lower maintenance costs and a significant reduction in gas pollution, electric vehicles have become a more prominent choice for car customers. In addition, the fast development of batteries and charging techniques in recent years has increased the performance of electric vehicles and customers’ confidence in this new form of transportation.</p>
+<p>Our research topic is the analysis of the electric vehicle data registered through the Washington State Department of Licensing (DOL).To understand the recent development of the electric vehicles market, we will perform statistical analysis and data visualization on the Electrical Vehicle Population Data to answer specific questions, including the change in the total amount over the years, the geographical distribution of different car models, and the electric range associated with model types and years.</p>
 </div>
 <div id="data-availability" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Data availability<a href="proposal.html#data-availability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Description:</strong>
+Our team used the Dataset called ‘Electric Vehicle Population Data’.</p>
+<p>URL: <a href="https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2" class="uri">https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2</a></p>
+<p>The Dataset records the electric Vehicle in Washington State, and the data is collected by the Washington State Department of Licensing when an electric vehicle is registered. The Dataset was created on April 16, 2019, and the most recent update was on October 14, 2022 (the frequency of updates of the Dataset is unknown. However, the most recent update was within one month of this proposal being created). The data format is CSV, and everyone can directedly download this Dataset from the Washington state government’s open data portal: ‘data.wa.gov’. Hence, our team will import data by going to the URL of the Dataset, clicking the ‘Export’ button, saving the Dataset in CSV format, and reading the CSV file from the R Studio. The Dataset has a header, 109027 rows. From the data provider, each row in the Dataset represents an electric vehicle in Washington State.</p>
+<p><strong>Other Fact:</strong>
+For the 2020 Census Tract column, the ‘census tract code’ is the code assigned by the United States Census Bureau in the 2020 census, also known as Geographic Identifier (GEOID).</p>
+<p><strong>Important information of the dataset:</strong>
+The Dataset has a header, 109027 rows. From the data provider, each row in the Dataset represents an electric vehicle in Washington State.</p>
+<p>The Dataset has 17 columns, and the meaning of each column is below:</p>
+<p>Vin: 10-character ID of each electric Vehicle in Washington State. (Data Type: Text, Missing Value: No)</p>
+<p>Country:The country where the vehicle owner resides. (Data Type: Text, Missing Value: No)</p>
+<p>City: The country where the vehicle owner resides. (Data Type: Text, Missing Value: No)</p>
+<p>State: The State where the vehicle owner resides. (Data Type: Text, Missing Value: No)</p>
+<p>Postal Code: The 5-digit zip code where the vehicle owner resides. (Data Type: Text, Missing Value: No)</p>
+<p>Model Year: The model year of the electric vehicle (Data Type: Text, Missing Value: No)</p>
+<p>Make: The manufacturer of the vehicle. (Data Type: Text, Missing Value: No)</p>
+<p>Model: The model of the Vehicle (Data Type: Text, Missing Value: No)</p>
+<p>Electric Vehicle Type: The type of the electric vehicle, all-electric or plug-in hybrid. (Data Type: Text, Missing Value: No)</p>
+<p>Clean Alternative Fuel Vehicle Eligibility: whether the vehicle is eligible for the ‘Clean Alternative Fuel Vehicle’ (Data Type: Text, Missing Value: No)</p>
+<p>Electric Range: how far a vehicle can travel purely on its electric charge (Data Type: Number, Missing Value: Yes, represented as 0)</p>
+<p>Base MSRP: the lowest manufacturer’s suggested retail price (Data Type: Number, Missing Value: Yes, represented as 0)</p>
+<p>Legislative District: Specific section of Washington State where the vehicle’s owner resides. (Data Type: Number, Missing Value: Yes for the ‘State’ of the Vehicle is not WA, represent as N/A)</p>
+<p>DOL Vehicle ID: Unique number of each vehicle assigned by the Washington State Department of Licensing (Data Type: Text, Missing Value: No)</p>
+<p>Vehicle Location: The center of the ZIP code for the registered Vehicle (Data Type: Point, Missing Value: Yes, represented as N/A)</p>
+<p>Electric Utility: this is the electric power retail service territory serving the address of the registered vehicle. (Data Type: Text, Missing Value: Yes, represent as N/A)</p>
+<p>2020 Census Tract: Combination of the State, country, and the census tract code (Data Type: Text, Missing Value: No)</p>
 
 </div>
 </div>
