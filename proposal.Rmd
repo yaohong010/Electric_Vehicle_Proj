@@ -1,0 +1,55 @@
+# Proposal
+
+## Research topic
+Over the last few years, the expanding market of electric vehicles has brought significant changes in the traditional automotive industry. With lower maintenance costs and a significant reduction in gas pollution, electric vehicles have become a more prominent choice for car customers. In addition, the fast development of batteries and charging techniques in recent years has increased the performance of electric vehicles and customers’ confidence in this new form of transportation. To understand the recent development of the electric vehicles market, we will analyze the electric vehicle data registered through the Washington State Department of Licensing (DOL). This research will perform statistical analysis and data visualization on the Electrical Vehicle Population Data to answer specific questions, including the change in the total amount over the years, the geographical distribution of different car models, and the electric range associated with model types and years. 
+
+## Data availability
+**Description:**
+Our team used the Dataset called 'Electric Vehicle Population Data'. 
+URL: https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2
+The Dataset records the electric Vehicle in Washington State, and the data is collected by the Washington State Department of Licensing when an electric vehicle is registered. The Dataset was created on April 16, 2019, and the most recent update was on October 14, 2022 (the frequency of updates of the Dataset is unknown. However, the most recent update was within one month of this proposal being created). The data format is CSV, and everyone can directedly download this Dataset from the Washington state government's open data portal: 'data.wa.gov'. Hence, our team will import data by going to the URL of the Dataset, clicking the 'Export' button, saving the Dataset in CSV format, and reading the CSV file from the R Studio. The Dataset has a header, 109027 rows. From the data provider, each row in the Dataset represents an electric vehicle in Washington State. 
+
+**Other Fact:**
+For the 2020 Census Tract column, the 'census tract code' is the code assigned by the United States Census Bureau in the 2020 census, also known as Geographic Identifier (GEOID).
+
+**Important information of the dataset:**
+The Dataset has a header, 109027 rows. From the data provider, each row in the Dataset represents an electric vehicle in Washington State. 
+
+The Dataset has 17 columns, and the meaning of each column is below:
+
+Vin: 10-character ID of each electric Vehicle in Washington State. (Data Type: Text, Missing Value: No)
+
+Country:The country where the vehicle owner resides. (Data Type: Text, Missing Value: No)
+
+City: The country where the vehicle owner resides. (Data Type: Text, Missing Value: No)
+
+State: The State where the vehicle owner resides. (Data Type: Text, Missing Value: No)
+
+Postal Code: The 5-digit zip code where the vehicle owner resides. (Data Type: Text, Missing Value: No)
+
+Model Year: The model year of the electric vehicle (Data Type: Text, Missing Value: No)
+
+Make: The manufacturer of the vehicle. (Data Type: Text, Missing Value: No)
+
+Model: The model of the Vehicle (Data Type: Text, Missing Value: No)
+
+Electric Vehicle Type: The type of the electric vehicle, all-electric or plug-in hybrid. (Data Type: Text, Missing Value: No)
+
+Clean Alternative Fuel Vehicle Eligibility:  whether the vehicle is eligible for the 'Clean Alternative Fuel Vehicle' (Data Type: Text, Missing Value: No)
+
+Electric Range: how far a vehicle can travel purely on its electric charge (Data Type: Number, Missing Value: Yes, represented as 0)
+
+Base MSRP: the lowest manufacturer's suggested retail price (Data Type: Number, Missing Value: Yes, represented as 0)
+
+Legislative District: Specific section of Washington State where the vehicle's owner resides. (Data Type: Number, Missing Value: Yes for the 'State' of the Vehicle is not WA, represent as N/A)
+
+DOL Vehicle ID: Unique number of each vehicle assigned by the Washington State Department of Licensing (Data Type: Text, Missing Value: No)
+
+Vehicle Location: The center of the ZIP code for the registered Vehicle (Data Type: Point, Missing Value: Yes, represented as N/A)
+
+Electric Utility: this is the electric power retail service territory serving the address of the registered vehicle. (Data Type: Text, Missing Value: Yes, represent as N/A)
+
+2020 Census Tract: Combination of the State, country, and the census tract code (Data Type: Text, Missing Value: No)
+
+
+
