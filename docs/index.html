@@ -23,7 +23,7 @@
 <meta name="author" content="Yaohong Liang, Zhongyuan Ye, Shuyu He" />
 
 
-<meta name="date" content="2022-11-01" />
+<meta name="date" content="2022-12-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -84,7 +84,29 @@
 <li class="chapter" data-level="3.2" data-path="data.html"><a href="data.html#cleaning-transformation"><i class="fa fa-check"></i><b>3.2</b> Cleaning / transformation</a></li>
 <li class="chapter" data-level="3.3" data-path="data.html"><a href="data.html#missing-value-analysis"><i class="fa fa-check"></i><b>3.3</b> Missing value analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#before-analyzing"><i class="fa fa-check"></i><b>4.1</b> Before Analyzing:</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#overall-electric-cars-market-analysis-for-washington-state"><i class="fa fa-check"></i><b>4.2</b> Overall Electric Cars Market Analysis for Washington State</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="results.html"><a href="results.html#overall-electric-car-market-in-washington"><i class="fa fa-check"></i><b>4.2.1</b> Overall Electric Car Market in Washington</a></li>
+<li class="chapter" data-level="4.2.2" data-path="results.html"><a href="results.html#overall-electric-car-market-bar-chart"><i class="fa fa-check"></i><b>4.2.2</b> Overall Electric Car Market Bar Chart:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#brand-based-electric-cars-market-analysis-for-washington-state"><i class="fa fa-check"></i><b>4.3</b> Brand-Based Electric Cars Market Analysis for Washington State</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="results.html"><a href="results.html#bar-plot-of-car-type-and-brand-market-analysis"><i class="fa fa-check"></i><b>4.3.1</b> Bar plot of Car-Type And Brand Market Analysis</a></li>
+<li class="chapter" data-level="4.3.2" data-path="results.html"><a href="results.html#alluvial-graph-with-brand-years-and-electric.vehicle.type"><i class="fa fa-check"></i><b>4.3.2</b> Alluvial Graph with Brand, Years, and Electric.Vehicle.Type</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#electric-range-analysis-for-electric-cars-in-washington-state"><i class="fa fa-check"></i><b>4.4</b> Electric Range Analysis for Electric Cars in Washington State</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="results.html"><a href="results.html#overview-of-electric-range-distribution-of-range-data"><i class="fa fa-check"></i><b>4.4.1</b> Overview of Electric Range Distribution of Range Data</a></li>
+<li class="chapter" data-level="4.4.2" data-path="results.html"><a href="results.html#brand-based-analysis-on-zero-values-in-electric-range"><i class="fa fa-check"></i><b>4.4.2</b> Brand-based Analysis on Zero Values in <code>Electric Range</code></a></li>
+<li class="chapter" data-level="4.4.3" data-path="results.html"><a href="results.html#year-based-analysis-on-zero-values-in-electric-range"><i class="fa fa-check"></i><b>4.4.3</b> Year-based Analysis on Zero Values in <code>Electric Range</code></a></li>
+<li class="chapter" data-level="4.4.4" data-path="results.html"><a href="results.html#data-cleaning-on-zero-values-in-electric-range"><i class="fa fa-check"></i><b>4.4.4</b> Data Cleaning on Zero Values in <code>Electric Range</code></a></li>
+<li class="chapter" data-level="4.4.5" data-path="results.html"><a href="results.html#analysis-of-the-cafv-eligibility-after-cleaning-cafv-based-on-electric.range"><i class="fa fa-check"></i><b>4.4.5</b> Analysis of the CAFV Eligibility After Cleaning CAFV based on Electric.Range</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#geographic-based-analysis-for-electric-cars-in-washington-state"><i class="fa fa-check"></i><b>4.5</b> Geographic-Based Analysis for Electric Cars in Washington State</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>5</b> Interactive component</a></li>
 <li class="chapter" data-level="6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a></li>
 <li class="divider"></li>
@@ -109,10 +131,12 @@
 <div id="header">
 <h1 class="title">Electric Vehicle Analysis</h1>
 <p class="author"><em>Yaohong Liang, Zhongyuan Ye, Shuyu He</em></p>
-<p class="date"><em>2022-11-01</em></p>
+<p class="date"><em>2022-12-15</em></p>
 </div>
 <div id="introduction" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>With the development in battery and charging technologies, electrical vehicles, defined as vehicles using more than one electric motor for propulsion (<a href="https://en.wikipedia.org/wiki/Electric_vehicle">1</a>), are becoming a more prominent competitor in the automotive market. It is an observable trend that the global electric vehicle market has been expanding quickly in recent years. With the main advantages of being environmentally friendly and lower maintenance costs, electric vehicles have become a preferable choice for vehicle customers. Tesla, known as the biggest manufacturer in the electric cars market, has taken the majority of the market; many traditional fuel-based car manufacturers, such as Chevrolet and Ford, also started to sell electric vehicles.</p>
+<p>To better understand the development of the electric vehicle market, we choose to study the data of electric vehicles registered in WA from 1997 to 2023. Electric cars have two categories based on their power source: battery electric vehicles (BEVs) and plug-in hybrid electric vehicles (PHEVs). BEVs are powered by electricity only, while PHEVs use electricity and other fuels, such as gasoline or diesel, to power the engine (<a href="https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2">2</a>). This research will use multiple data visualization techniques to study the development of battery electric vehicles and plug-in hybrid electric vehicles registered in Washington state. In addition, the research will analyze several factors, including electric vehicle manufacturers, geographical distribution, and electric range, to understand the change in the electric vehicle market.</p>
 
 </div>
             </section>

@@ -23,7 +23,7 @@
 <meta name="author" content="Yaohong Liang, Zhongyuan Ye, Shuyu He" />
 
 
-<meta name="date" content="2022-11-01" />
+<meta name="date" content="2022-12-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -84,7 +84,29 @@
 <li class="chapter" data-level="3.2" data-path="data.html"><a href="data.html#cleaning-transformation"><i class="fa fa-check"></i><b>3.2</b> Cleaning / transformation</a></li>
 <li class="chapter" data-level="3.3" data-path="data.html"><a href="data.html#missing-value-analysis"><i class="fa fa-check"></i><b>3.3</b> Missing value analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#before-analyzing"><i class="fa fa-check"></i><b>4.1</b> Before Analyzing:</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#overall-electric-cars-market-analysis-for-washington-state"><i class="fa fa-check"></i><b>4.2</b> Overall Electric Cars Market Analysis for Washington State</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="results.html"><a href="results.html#overall-electric-car-market-in-washington"><i class="fa fa-check"></i><b>4.2.1</b> Overall Electric Car Market in Washington</a></li>
+<li class="chapter" data-level="4.2.2" data-path="results.html"><a href="results.html#overall-electric-car-market-bar-chart"><i class="fa fa-check"></i><b>4.2.2</b> Overall Electric Car Market Bar Chart:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#brand-based-electric-cars-market-analysis-for-washington-state"><i class="fa fa-check"></i><b>4.3</b> Brand-Based Electric Cars Market Analysis for Washington State</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="results.html"><a href="results.html#bar-plot-of-car-type-and-brand-market-analysis"><i class="fa fa-check"></i><b>4.3.1</b> Bar plot of Car-Type And Brand Market Analysis</a></li>
+<li class="chapter" data-level="4.3.2" data-path="results.html"><a href="results.html#alluvial-graph-with-brand-years-and-electric.vehicle.type"><i class="fa fa-check"></i><b>4.3.2</b> Alluvial Graph with Brand, Years, and Electric.Vehicle.Type</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#electric-range-analysis-for-electric-cars-in-washington-state"><i class="fa fa-check"></i><b>4.4</b> Electric Range Analysis for Electric Cars in Washington State</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="results.html"><a href="results.html#overview-of-electric-range-distribution-of-range-data"><i class="fa fa-check"></i><b>4.4.1</b> Overview of Electric Range Distribution of Range Data</a></li>
+<li class="chapter" data-level="4.4.2" data-path="results.html"><a href="results.html#brand-based-analysis-on-zero-values-in-electric-range"><i class="fa fa-check"></i><b>4.4.2</b> Brand-based Analysis on Zero Values in <code>Electric Range</code></a></li>
+<li class="chapter" data-level="4.4.3" data-path="results.html"><a href="results.html#year-based-analysis-on-zero-values-in-electric-range"><i class="fa fa-check"></i><b>4.4.3</b> Year-based Analysis on Zero Values in <code>Electric Range</code></a></li>
+<li class="chapter" data-level="4.4.4" data-path="results.html"><a href="results.html#data-cleaning-on-zero-values-in-electric-range"><i class="fa fa-check"></i><b>4.4.4</b> Data Cleaning on Zero Values in <code>Electric Range</code></a></li>
+<li class="chapter" data-level="4.4.5" data-path="results.html"><a href="results.html#analysis-of-the-cafv-eligibility-after-cleaning-cafv-based-on-electric.range"><i class="fa fa-check"></i><b>4.4.5</b> Analysis of the CAFV Eligibility After Cleaning CAFV based on Electric.Range</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#geographic-based-analysis-for-electric-cars-in-washington-state"><i class="fa fa-check"></i><b>4.5</b> Geographic-Based Analysis for Electric Cars in Washington State</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>5</b> Interactive component</a></li>
 <li class="chapter" data-level="6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a></li>
 <li class="divider"></li>
@@ -108,7 +130,193 @@
             <section class="normal" id="section-">
 <div id="results" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Results<a href="results.html#results" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Library Setup: installed all related packages before further analyzing the data.</p>
+<div id="before-analyzing" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Before Analyzing:<a href="results.html#before-analyzing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>section 4.1, 4.2 and 4.4 will use the data that cleaning based on section 3.2 (Dataset after cleaning will be named as ‘df’)</li>
+<li>section 4.3 will use the raw data set data, which need to be loaded at the start of the 4.3 (Raw Dataset will be named as ‘raw’)</li>
+</ol>
+</div>
+<div id="overall-electric-cars-market-analysis-for-washington-state" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Overall Electric Cars Market Analysis for Washington State<a href="results.html#overall-electric-cars-market-analysis-for-washington-state" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="overall-electric-car-market-in-washington" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Overall Electric Car Market in Washington<a href="results.html#overall-electric-car-market-in-washington" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Showing the count of electric car from ‘Model.Years’ perspective<br />
+top-coding: if certain model.Year is below 1000 cars, we classified it as ‘Other’</p>
+<pre><code>##  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023 Other 
+##  1695  4669  3665  4918  5709  8598 14190 10216 10998 18277 26455  1863   899</code></pre>
+<p>The table above shows that most car model Years are between 2012-2023, which means that most buyers buy electric cars between 2012 and 2023. Hence, our marketing analysis will focus on the time zone between 2012-2023.<br />
+</p>
+<p>In the following analysis, we use the Model.Years to represent the time of the buyer buying the car, and add a new column ‘Years’ for the following analysis to represent the year of buying: ‘Years’ equal to ‘Model.Years’.<br />
+</p>
+</div>
+<div id="overall-electric-car-market-bar-chart" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Overall Electric Car Market Bar Chart:<a href="results.html#overall-electric-car-market-bar-chart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To further analyze the electric car market based on ‘Years’, it’s important to split it based on other columns.<br />
+After several attempts, we found out that it’s most proper to split the ‘Years’ data with Electric.Vehicle.Type</p>
+<p><strong>Variable type:</strong><br />
+Model.Year: Discrete Ordinal Categorical Variable<br />
+Electric.Vehicle.Type: Nominal Categorical Variable<br />
+</p>
+<p><strong>Plot Type:</strong> Bar plot<br />
+fill:Electric.Vehicle.Type</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>From the plot above, the market size of electric cars is continuously growing from 2012 to 2022, except in 2014 and 2019. The proportion of PHEV cars in all new electric cars are high in 2012,2014, and 2018. However, BEV cars dominated the Electric Vehicle market every year between 2012 to 2022. For 2022, more than 75% of the buyer buying BEV cars.</p>
+<p>There are two major decreases in the Electric car market: 2014 and 2019. However, the two decreases is different: : the BEV amount is decreasing compared to 2013, but the PHEV amount is increasing compared to 2-13 : Both BEV and PHEV amounts are decreasing compared to 2017</p>
+</div>
+</div>
+<div id="brand-based-electric-cars-market-analysis-for-washington-state" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Brand-Based Electric Cars Market Analysis for Washington State<a href="results.html#brand-based-electric-cars-market-analysis-for-washington-state" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Before analyzing the market share of each brand, our team will analyze the absolute Electric car selling data of each brand in Washington State.<br />
+</p>
+<p><strong>Variable type:</strong><br />
+Brand: Nominal Categorical Variable<br />
+Electric.Vehicle.Type: Nominal Categorical Variable<br />
+</p>
+<p><br />
+<strong>Plot Type:</strong> Cleveland dot plot<br />
+fill: Electric.Vehicle.Type<br />
+Order: BEV</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p>We can observe from the plot that TESLA has the highest count in WA registered electric vehicles among all manufacturers, which is over 50,000 among 112,152 registered cars. The top five Battery Electric Vehicle manufacturers are TESLA, NISSAN, CHEVROLET, KIA, and VOLKSWAGEN. We can also observe that Battery Electric Vehicles count most registered battery vehicles.<br />
+</p>
+<div id="bar-plot-of-car-type-and-brand-market-analysis" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Bar plot of Car-Type And Brand Market Analysis<a href="results.html#bar-plot-of-car-type-and-brand-market-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To further analyze the market, it’s important to analyze the raw data based on the brand.<br />
+Due to too many brands involving the electric car market, we are only tracking the brand that sold at least 3000 cars before in Washington State.<br />
+<br />
+<strong>Variable type:</strong><br />
+Brand : Nominal Categorical Variable<br />
+Model.Year: Discrete Ordinal Categorical Variable<br />
+Electric.Vehicle.Type: Nominal Categorical Variable<br />
+</p>
+<p><br />
+<strong>Plot Type:</strong> Bar plot<br />
+fill: Brand<br />
+Facet: Electric.Vehicle.Type</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>From the graph above,<br />
+1. There are only 7 brands that sold more than 3000 cars in Washington State: BMW, CHEVROLET, FORD, KIA, NISSAN, TESLA, and TOYOTA<br />
+2. For the BEV market, NISSAN dominated the market from 2011 to 2015, and Tesla dominated the market from 2016 to 2022.<br />
+3. For the PHEV market, the market is more diverse: there doesn’t have a dominant brand PHEV market.<br />
+4. Tesla dramatically increase its sales in Washington State from 2015 to 2022, and has become the largest brand in the market since 2018. In 2022, Tesla is owned more than 50% market share in the BEV market.<br />
+5. NISSAN used to dominate the BEV market from 2011 to 2015. However, its annual sales never exceed 5000 cars. In 2022, its market share will be less than 10% in the BEV market.<br />
+6. CHEVROLET used to be the largest player in the PHEV market(2012, 2013, 2013, 2017, 2018). However, its market share in PHEV almost disappears after 2018. In contrast, it becomes a Top 5 player in the BEV market from 2017 to 2022.<br />
+7. The No.5 BEV market brand: VOLKSWAGEN, doesn’t sell more than 3000 cars in Washington State</p>
+</div>
+<div id="alluvial-graph-with-brand-years-and-electric.vehicle.type" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Alluvial Graph with Brand, Years, and Electric.Vehicle.Type<a href="results.html#alluvial-graph-with-brand-years-and-electric.vehicle.type" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To further analyze the composition of each brand’s year-based selling details, our team used an Alluvial graph to visualize the relationship between Brand, Years, and Electric.Vehicle.Type.</p>
+<p><strong>Variable type:</strong><br />
+Brand : Nominal Categorical Variable<br />
+Model.Year: Discrete Ordinal Categorical Variable<br />
+Electric.Vehicle.Type: Nominal Categorical Variable<br />
+</p>
+<p><br />
+<strong>Plot Type:</strong> Alluvial Graph<br />
+fill: Electric.Vehicle.Type<br />
+</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p>From the graph above:<br />
+1. Three brands focus only on BEV cars: Tesla, Kia, and Nissan.<br />
+2. Two brands are almost focusing only on PHEV cars: Toyota, and BMW.<br />
+3. Ford focused only on PHEV cars from 2013 to 2017, and began to focus only on BEV cars from 2018 to 2022.<br />
+4. Chevrolet mainly sold PHEV cars from 2013 to 2017, but switched to mainly selling BEV cars from 2017 to 2022.<br />
+</p>
+</div>
+</div>
+<div id="electric-range-analysis-for-electric-cars-in-washington-state" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Electric Range Analysis for Electric Cars in Washington State<a href="results.html#electric-range-analysis-for-electric-cars-in-washington-state" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Based on reference, the electric range represents the miles a car can run with pure electricity, which is an important performance measurement of an electric car.</p>
+<div id="overview-of-electric-range-distribution-of-range-data" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Overview of Electric Range Distribution of Range Data<a href="results.html#overview-of-electric-range-distribution-of-range-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before further analyzing, our team will visualize the distribution of the Range of each electric car with a heat map.</p>
+<p><strong>Variable type:</strong><br />
+Electric.Range : Quantitative Variable<br />
+Model.Year: Discrete Ordinal Categorical Variable<br />
+Electric.Vehicle.Type: Nominal Categorical Variable<br />
+</p>
+<p><strong>Plot Type:</strong> Heat Map
+Facet: Electric.Vehicle.Type
+<img src="finalproj_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p>To find the relationship between Electric Range, Model Year, and Electric Vehicle Map, we create a 2d heatmap of the electric range of Electric Range against Model Year. From the plot, we make the following observations:<br />
+1. The Battery Electric Vehicle appears to have a higher Electric Range than Plug-in Hybrid Electric Vehicle before 2021.<br />
+2. Before 2021, there appeared to be an increasing trend for electric range for both electric vehicle types over the years.<br />
+2. After 2021, Battery Electric Vehicle appears to have 0 electric range from the dataset, which stands for missing value according to the
+<a href="https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2">source website</a>. From source notes, Electric Range is no longer maintained in the dataset because BEVs have a range of 30 miles or more.<br />
+</p>
+</div>
+<div id="brand-based-analysis-on-zero-values-in-electric-range" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Brand-based Analysis on Zero Values in <code>Electric Range</code><a href="results.html#brand-based-analysis-on-zero-values-in-electric-range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>According to the official document of our data source, <code>Electric Range</code> is no longer maintained for Battery Electric Vehicles (BEV) because new BEVs have an electric range of 30 miles or more. Zero (0) will be entered where the electric range has not been researched. In this section, we would like to investigate the zero values in <code>Electric Range</code> to see if we could find any insight behind it.</p>
+<p><strong>Variable type:</strong><br />
+Brand : Nominal Categorical Variable<br />
+Electric.Range: Quantitative Variable<br />
+</p>
+<p><br />
+<strong>plot type:</strong> bar plot</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>As we can see from the bar chart above, most zero values appear in Tesla’s electric vehicles. It shows that Tesla produced a greater amount of new Battery Electric Vehicles (BEV) as compared to other manufacturers. There are over 25000 new BEV and the total number of new BEV of other manufacturers not even exceed 10000.<br />
+</p>
+</div>
+<div id="year-based-analysis-on-zero-values-in-electric-range" class="section level3 hasAnchor" number="4.4.3">
+<h3><span class="header-section-number">4.4.3</span> Year-based Analysis on Zero Values in <code>Electric Range</code><a href="results.html#year-based-analysis-on-zero-values-in-electric-range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Instead of a Brand-based analysis, our team will analyze the Zero value in the <code>Electric Range</code> from the ‘Years’ perspective.</p>
+<p><strong>Variable type:</strong><br />
+Electric.Range: Quantitative Variable<br />
+Model.Year: Discrete Ordinal Categorical Variable</p>
+<p><br />
+<strong>plot type:</strong> bar plot
+<img src="finalproj_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p>If we focus on the model year, we can see that those new BEV boosted in 2021. The number of new BEV increased significantly starting from 2021, and it nearly achieved 15000. This number even went up to over 25000 in 2022. And if we count the Clean Alternative Fuel Vehicle Eligibility across model year, we will see that those with battery range not been researched are clustered around 2021 and 2022.<br />
+</p>
+</div>
+<div id="data-cleaning-on-zero-values-in-electric-range" class="section level3 hasAnchor" number="4.4.4">
+<h3><span class="header-section-number">4.4.4</span> Data Cleaning on Zero Values in <code>Electric Range</code><a href="results.html#data-cleaning-on-zero-values-in-electric-range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Given the explanation provided by the official document, those BEV with zero values in <code>Electric Range</code> have electric range 30 miles or more, and their corresponding <code>Clean Alternative Fuel Vehicle (CAFV) Eligibility</code> are set to “Eligibility unknown as battery range has not been researched”. The other 2 types of CAFV Eligibility are “Clean Alternative Fuel Vehicle Eligible” and “Not eligible due to low battery range”. If we assume there are only these three categories, and prove that BEV with electric range 30 miles or more do not suffer from “Not eligible due to low battery range”, then we can conclude that those with zero values in <code>Electric Range</code> are “Clean Alternative Fuel Vehicle Eligible”.</p>
+<p><br />
+It turns out that most vehicles with <code>Electric Range</code> equal or greater than 30 belong to “Clean Alternative Fuel Vehicle Eligible”. Thus, combining the explanation of the official document we conclude that BEV with zero values in <code>Electric Range</code> are all in this category as well. Although this is not a rigorous proof, it should serve as an acceptable hypothesis in our analysis.<br />
+<br />
+<strong>Variable type:</strong><br />
+CAFV Eligibility : Nominal Categorical Variable<br />
+Years: Discrete Ordinal Categorical Variable<br />
+</p>
+<p><br />
+<strong>plot type:</strong> bar plot
+fill= CAFV Eligibility
+position = “dodge”</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>After we transform the <code>Clean Alternative Fuel Vehicle (CAFV) Eligibility</code>, there are only 2 categories left. Now, we can see that BEV that are eligible for CAFV shows an overall trend of increasing over the years and the total number reached its peak at around 2500 in 2022. We may infer that the sharp increase after 2020 are contributed by Tesla as shown in the previous plot, where Tesla produced more newly BEV from 2021 to 2022 as compared to its competitors.</p>
+</div>
+<div id="analysis-of-the-cafv-eligibility-after-cleaning-cafv-based-on-electric.range" class="section level3 hasAnchor" number="4.4.5">
+<h3><span class="header-section-number">4.4.5</span> Analysis of the CAFV Eligibility After Cleaning CAFV based on Electric.Range<a href="results.html#analysis-of-the-cafv-eligibility-after-cleaning-cafv-based-on-electric.range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>After Cleaning CAFV based on Electric.Range, our team used a mosaic plot to analyze the relationship between CAFV Eligibility and Electric Vehicle Type.<br />
+</p>
+<p><strong>Variable type:</strong><br />
+CAFV Eligibility : Nominal Categorical Variable<br />
+Electric Vehicle Type: Nominal Categorical Variable<br />
+</p>
+<p><br />
+<strong>plot type:</strong> mosaic plot</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>We create a mosaic plot to observe the relationship between electric vehicle type and clean alternative fuel vehicle (CAFV) eligibility. From the plot, we can conclude a strong correlation between the two variables.<br />
+Based on Washington State Legislature (RCW) 82.12.809, “clean alternative fuel” means natural gas, propane, hydrogen, or electricity. By the definition of battery electric vehicles in the dataset source page, they use electricity only on one or more batteries to store electric power source.<br />
+Therefore, most battery Electric Vehicles are CAFV eligible, while for plug-in Hybrid electric vehicles, around 45 percent are CAFV eligible, and about 55 percent are not eligible.<br />
+</p>
+<p><a href="https://apps.leg.wa.gov/rcw/default.aspx?cite=82.08.809">Reference 1: Washington State Legislature</a><br />
+<a href="https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2">Reference 2: Original Data source for Data Set</a></p>
+</div>
+</div>
+<div id="geographic-based-analysis-for-electric-cars-in-washington-state" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Geographic-Based Analysis for Electric Cars in Washington State<a href="results.html#geographic-based-analysis-for-electric-cars-in-washington-state" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the last part of the ‘Result’ Section, our team analyzes the distribution of electric cars in Washington State based on their geographic location: ‘Postal.Code’ Column.<br />
+The following graph uses the Nominal Categorical variable: ‘Postal.Code’ to draw the Choropleth map</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p>We compare the electric vehicle density map and Washington state regional map; we identify the regions where most electric vehicles are distributed: King, Pierce, Thurston, Kitsap, Mason, Whatcom, Clark, and Cowlitz.
+<a href="https://en.wikipedia.org/wiki/List_of_counties_in_Washington">(region map reference)</a></p>
 
+</div>
 </div>
             </section>
 
